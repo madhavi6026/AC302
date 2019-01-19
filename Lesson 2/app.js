@@ -2,6 +2,8 @@ console.log("test...")
 
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
+
+//setting up 
 ctx.moveTo(0,0);
 ctx.lineTo(200,100);
 

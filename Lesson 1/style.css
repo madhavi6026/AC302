@@ -1,0 +1,28 @@
+body {background-color:pink;}
+
+
+h1 {color:purple;} 
+
+
+img {float:left;
+ 
+}
+
+#piano {
+	
+height: 20px;
+width:10px;
+ border: 2px solid black;
+}
+
+#violin {
+height: 20px;
+ width: 10px;
+ border: 2px solid black;}
+
+#microphone {
+height: 10px;
+ width:20px;
+ border: 2px solid black;}
+
+

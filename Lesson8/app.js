@@ -108,9 +108,9 @@ enemy2 = game.add.sprite(10, 20, 'baddie'); //follows same steps to create an en
 
 	
 	game.physics.arcade.enable(enemy2); //image sprite will obey law of physics 
-	enemy1.body.bounce.y = 0.2; 
-	enemy1.body.gravity.y = 500; 
-	enemy1.body.collideWorldBounds = true; //these relate to the physics feature we turned on
+	enemy2.body.bounce.y = 0.2; 
+	enemy2.body.gravity.y = 500; 
+	enemy2.body.collideWorldBounds = true; //these relate to the physics feature we turned on
 
 
 
@@ -143,7 +143,7 @@ if(cursors.left.isDown || aKey.isDown){ //checks if the left key is pressed or n
 	}
 
 //Allow the player to jump if touching the ground 
-if(cursors.up.isDown || wKey.isDown && player.body.touching.down){ //to prevent double jump, make sure sprite touches ground before jumping 
+if((cursors.up.isDown || wKey.isDown) && player.body.touching.down){ //to prevent double jump, make sure sprite touches ground before jumping 
 	player.body.velocity.y = -300; //sprite will jump only if the up arrow key is pressd and it is touching the ground. Y velocity is negative to make the sprite move upwards 
 }
 
